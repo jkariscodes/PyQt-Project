@@ -3,7 +3,7 @@ This is a PyQt project that has the aim of helping developers learn and apprecia
 implementation.
 
 ## About PyQt
-PyQt (*pronounced as pycute*) is a graphical user interface (GUI) library developed by 
+PyQt is a graphical user interface (GUI) library developed by 
 [RiverBank Computing Ltd](https://www.riverbankcomputing.com/) used to develop graphical user interfaces.
 PyQt provides Python bindings for the Qt framework that is natively in C++ and provides bindings for Qt4 and Qt5 
 versions.
