@@ -65,10 +65,4 @@ Using brew in terminal type the command
 
 ## Chapters
 ### 1.User Interfaces
-#### 1.1. Widgets
-#### 1.2. Layouts
-#### 1.3. Dialogs
-#### 1.4. Main Windows
-### 2. Signals and Slots
-### 3. Model View Controller
 
