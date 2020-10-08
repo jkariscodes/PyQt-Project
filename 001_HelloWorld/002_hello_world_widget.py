@@ -25,27 +25,27 @@ from PyQt5.QtWidgets import (
 import sys
 
 
-class HelloWorld(QWidget):
+class HelloWorldWdgt(QWidget):
     """
-    This is a class for our Hello World PyQt application.
+    This is a class for our Hello World PyQt application widget.
     """
 
-    def __init__(self):
-        QWidget.__init__(self)
+    def __init__(self, parent=None):
+        super(HelloWorldWdgt, self).__init__(parent)
         # Setting the dialog title
         self.setWindowTitle("Hello World application")
         self.setFixedWidth(300)
         # Setting the layout to vertical box layout.
-        layout = QVBoxLayout()
+        self.layout = QVBoxLayout()
         # Creating a label with hello world text.
-        label = QLabel("Hello World! This is a PyQt dialog.")
+        self.label = QLabel("Hello World! This is a PyQt widget.")
         # Creating a line edit
-        layout.addWidget(label)
-
-        self.setLayout(layout)
+        self.layout.addWidget(self.label)
+        # Setting the layout
+        self.setLayout(self.layout)
 
 
 app = QApplication(sys.argv)
-my_dialog = HelloWorld()
-my_dialog.show()
-my_dialog.exec_()
+my_widget = HelloWorldWdgt()
+my_widget.show()
+sys.exit(app.exec_())
