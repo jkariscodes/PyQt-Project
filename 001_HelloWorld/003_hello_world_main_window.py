@@ -1,8 +1,8 @@
 """
 /***************************************************************************
-Name                 : Hello World Dialog
-Description          : Dialog for showing hello world.
-Date                 : 08/October/2020
+Name                 : Hello World window
+Description          : Window for showing hello world.
+Date                 : 09/October/2020
 copyright            : (C) 2020 by Joseph Kariuki
 email                : joehene@gmail.com
  ***************************************************************************/
@@ -17,36 +17,26 @@ email                : joehene@gmail.com
 """
 from PyQt5.QtWidgets import (
     QApplication,
-    QDialog,
-    QVBoxLayout,
-    QLabel
+    QMainWindow
 )
 
 import sys
 
 
-class HelloWorldDlg(QDialog):
+class HelloWorldWindow(QMainWindow):
     """
-    This is a class for our Hello World PyQt application dialog.
+    This is a class for our Hello World PyQt application window.
     """
 
     def __init__(self, parent=None):
-        super(HelloWorldDlg, self).__init__(parent)
-        # Setting the dialog title
+        super(HelloWorldWindow, self).__init__(parent)
+        # Setting the window title
         self.setWindowTitle("Hello World")
-        # Setting the width of dialog
+        # Setting the width of window
         self.setFixedWidth(300)
-        # Setting the layout to vertical box layout.
-        layout = QVBoxLayout()
-        # Creating a label with hello world text.
-        label = QLabel("Hello World! This is a PyQt dialog.")
-        # Creating a line edit
-        layout.addWidget(label)
-        # Setting the layout
-        self.setLayout(layout)
 
 
 app = QApplication(sys.argv)
-my_dialog = HelloWorldDlg()
+my_dialog = HelloWorldWindow()
 my_dialog.show()
-my_dialog.exec_()
+sys.exit(app.exec_())
