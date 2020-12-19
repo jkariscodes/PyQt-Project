@@ -33,9 +33,9 @@ class HelloWorldDlg(QDialog):
     def __init__(self, parent=None):
         super(HelloWorldDlg, self).__init__(parent)
         # Setting the dialog title
-        self.setWindowTitle("Hello World")
+        self.setWindowTitle("Hello World - josephkariuki.com")
         # Setting the width of dialog
-        self.setFixedWidth(300)
+        self.setFixedWidth(400)
         # Setting the layout to vertical box layout.
         layout = QVBoxLayout()
         # Creating a label with hello world text.

@@ -1,8 +1,8 @@
 """
 /***************************************************************************
-Name                 : Main window with status bar
-Description          : Window containing a status bar.
-Date                 : 17/October/2020
+Name                 : Empty dialog
+Description          : An empty dialog.
+Date                 : 19/December/2020
 copyright            : (C) 2020 by Joseph Kariuki
 email                : joehene@gmail.com
  ***************************************************************************/
@@ -18,43 +18,41 @@ email                : joehene@gmail.com
 import sys
 from PyQt5.QtWidgets import (
     QApplication,
-    QMainWindow
+    QDialog
 )
 
 
-class WindowStatusBar(QMainWindow):
+class TheDialog(QDialog):
     """
-    This is a class for an PyQt application window.
+    This is a class for an PyQt dialog.
     """
 
     def __init__(self, parent=None):
-        super(WindowStatusBar, self).__init__(parent)
-        self.title = 'Main window with status bar - josephkariuki.com'
-        self.left = 100
-        self.top = 150
-        self.width = 450
-        self.height = 280
+        super(TheDialog, self).__init__(parent)
+        self.title = 'Dialog - josephkariuki.com'
+        self.left = 200
+        self.top = 250
+        self.width = 400
+        self.height = 300
         self.init_ui()
 
     def init_ui(self):
         """
-        Initialize the user interface wnd widgets.
+        Initialize the user interface.
         """
-        # Set the window title
+        # Set the dialog title
         self.setWindowTitle(self.title)
-        # Set the size of the window
+        # Set the size of the dialog
         self.setGeometry(
             self.left,
             self.top,
             self.width,
             self.height
         )
-        # Status bar message
-        self.statusBar().showMessage('This is a status bar message.')
 
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    my_dialog = WindowStatusBar()
+    my_dialog = TheDialog()
     my_dialog.show()
     sys.exit(app.exec_())

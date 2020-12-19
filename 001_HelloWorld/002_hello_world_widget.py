@@ -33,8 +33,8 @@ class HelloWorldWdgt(QWidget):
     def __init__(self, parent=None):
         super(HelloWorldWdgt, self).__init__(parent)
         # Setting the dialog title
-        self.setWindowTitle("Hello World application")
-        self.setFixedWidth(300)
+        self.setWindowTitle("Hello World - josephkariuki.com")
+        self.setFixedWidth(400)
         # Setting the layout to vertical box layout.
         self.layout = QVBoxLayout()
         # Creating a label with hello world text.

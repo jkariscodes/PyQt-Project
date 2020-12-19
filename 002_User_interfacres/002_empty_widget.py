@@ -1,8 +1,8 @@
 """
 /***************************************************************************
-Name                 : Main window with status bar
-Description          : Window containing a status bar.
-Date                 : 17/October/2020
+Name                 : Empty widget
+Description          : An empty widget.
+Date                 : 19/December/2020
 copyright            : (C) 2020 by Joseph Kariuki
 email                : joehene@gmail.com
  ***************************************************************************/
@@ -18,27 +18,27 @@ email                : joehene@gmail.com
 import sys
 from PyQt5.QtWidgets import (
     QApplication,
-    QMainWindow
+    QWidget
 )
 
 
-class WindowStatusBar(QMainWindow):
+class TheWidget(QWidget):
     """
-    This is a class for an PyQt application window.
+    This is a class for an PyQt widget.
     """
 
     def __init__(self, parent=None):
-        super(WindowStatusBar, self).__init__(parent)
-        self.title = 'Main window with status bar - josephkariuki.com'
-        self.left = 100
+        super(TheWidget, self).__init__(parent)
+        self.title = 'Widget - josephkariuki.com'
+        self.left = 150
         self.top = 150
-        self.width = 450
+        self.width = 380
         self.height = 280
         self.init_ui()
 
     def init_ui(self):
         """
-        Initialize the user interface wnd widgets.
+        Initialize the user interface.
         """
         # Set the window title
         self.setWindowTitle(self.title)
@@ -49,12 +49,10 @@ class WindowStatusBar(QMainWindow):
             self.width,
             self.height
         )
-        # Status bar message
-        self.statusBar().showMessage('This is a status bar message.')
 
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    my_dialog = WindowStatusBar()
+    my_dialog = TheWidget()
     my_dialog.show()
     sys.exit(app.exec_())
