@@ -19,7 +19,6 @@ import sys
 from PyQt5.QtWidgets import (
     QApplication,
     QWidget,
-    QFormLayout,
     QPushButton,
     QMessageBox,
     QHBoxLayout
@@ -33,6 +32,7 @@ class SignalAndSlot(QWidget):
         self.first_button = QPushButton(text="Button1")
         self.second_button = QPushButton(text="Button2")
         self.third_button = QPushButton(text="Button3")
+
         # Connecting the signals to their corresponding slots
         self.first_button.clicked.connect(self.on_first_button_click)
         self.second_button.clicked.connect(self.on_second_button_click)
