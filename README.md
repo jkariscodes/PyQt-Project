@@ -64,5 +64,8 @@ Using brew in terminal type the command
 `brew install pyqt`
 
 ## Chapters
-### 1.User Interfaces
+### 1. [Hello World](001_HelloWorld)
+### 2. [User Interfaces](002_User_interfaces)
+### 3. [Layouts](003_Layouts)
+### 4. [Events](004_Events)
 
