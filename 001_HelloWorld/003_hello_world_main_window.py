@@ -31,7 +31,7 @@ class HelloWorldWindow(QMainWindow):
     def __init__(self, parent=None):
         super(HelloWorldWindow, self).__init__(parent)
         # Setting the window title
-        self.setWindowTitle("Hello World Main window - josephkariuki.com")
+        self.setWindowTitle("Main window - josephkariuki.com")
         # Setting the width of window
         self.setFixedWidth(500)
 

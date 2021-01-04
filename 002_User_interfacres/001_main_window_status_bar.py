@@ -29,7 +29,7 @@ class WindowStatusBar(QMainWindow):
 
     def __init__(self, parent=None):
         super(WindowStatusBar, self).__init__(parent)
-        self.title = 'Main window with status bar - josephkariuki.com'
+        self.title = 'Main window and status bar - josephkariuki.com'
         self.left = 100
         self.top = 150
         self.width = 450
