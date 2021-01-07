@@ -10,6 +10,6 @@ messy arrangement of items. The layouts include the following:
    The grid layout (QGridLayout) management row and column mapping appears as shown below for all grid layouts.<br /><br />
    ![Grid layout](../images/grid_layout_1.png)<br /><br />
 4. This is a Form layout. <br /><br /> ![Form layout](../images/form_layout.png)<br /><br />
-5. This is a Stacked layout. <br /><br /> ![Stacked layout]&#40;../images/stacked_layout.png&#41;<br /><br />
+5. This is a Stacked layout.
 
 For details refer to the [PyQt  API documentation](https://doc.qt.io/qtforpython-5/api.html).
