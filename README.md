@@ -1,7 +1,5 @@
 # PyQt Project
-This is a PyQt project that has the aim of helping developers learn and appreciate desktop user interface design and 
-implementation.
-
+This is a PyQt beginner project that entails developing simple graphical user interfaces.
 ## About PyQt
 PyQt is a graphical user interface (GUI) library developed by 
 [RiverBank Computing Ltd](https://www.riverbankcomputing.com/) used to develop graphical user interfaces.
