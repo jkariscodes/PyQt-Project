@@ -1,7 +1,7 @@
 """
 /***************************************************************************
 Name                 : Hello World Dialog
-Description          : Dialog for showing hello world.
+Description          : A dialog showing hello world.
 Date                 : 08/October/2020
 copyright            : (C) 2020 by Joseph Kariuki
 email                : joehene@gmail.com
@@ -15,14 +15,13 @@ email                : joehene@gmail.com
  *                                                                         *
  ***************************************************************************/
 """
+import sys
 from PyQt5.QtWidgets import (
     QApplication,
     QDialog,
     QVBoxLayout,
     QLabel
 )
-
-import sys
 
 
 class HelloWorldDlg(QDialog):

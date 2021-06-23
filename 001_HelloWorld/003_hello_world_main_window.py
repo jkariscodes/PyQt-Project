@@ -1,7 +1,7 @@
 """
 /***************************************************************************
-Name                 : Hello World window
-Description          : Window for showing hello world.
+Name                 : Hello World Main Window
+Description          : A window showing hello world.
 Date                 : 09/October/2020
 copyright            : (C) 2020 by Joseph Kariuki
 email                : joehene@gmail.com
@@ -15,12 +15,11 @@ email                : joehene@gmail.com
  *                                                                         *
  ***************************************************************************/
 """
+import sys
 from PyQt5.QtWidgets import (
     QApplication,
     QMainWindow
 )
-
-import sys
 
 
 class HelloWorldWindow(QMainWindow):

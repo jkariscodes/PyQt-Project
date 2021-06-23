@@ -1,7 +1,7 @@
 """
 /***************************************************************************
 Name                 : Hello World Widget
-Description          : Widget for showing hello world.
+Description          : A widget showing hello world.
 Date                 : 08/October/2020
 copyright            : (C) 2020 by Joseph Kariuki
 email                : joehene@gmail.com
@@ -15,6 +15,7 @@ email                : joehene@gmail.com
  *                                                                         *
  ***************************************************************************/
 """
+import sys
 from PyQt5.QtWidgets import (
     QApplication,
     QWidget,
@@ -22,16 +23,14 @@ from PyQt5.QtWidgets import (
     QLabel
 )
 
-import sys
 
-
-class HelloWorldWdgt(QWidget):
+class HelloWorldWidget(QWidget):
     """
     This is a class for our Hello World PyQt application widget.
     """
 
     def __init__(self, parent=None):
-        super(HelloWorldWdgt, self).__init__(parent)
+        super(HelloWorldWidget, self).__init__(parent)
         # Setting the dialog title
         self.setWindowTitle("Hello World - josephkariuki.com")
         self.setFixedWidth(400)
@@ -46,6 +45,6 @@ class HelloWorldWdgt(QWidget):
 
 
 app = QApplication(sys.argv)
-my_widget = HelloWorldWdgt()
+my_widget = HelloWorldWidget()
 my_widget.show()
 sys.exit(app.exec_())
