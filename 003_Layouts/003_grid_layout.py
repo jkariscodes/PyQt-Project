@@ -42,7 +42,7 @@ class GridLayout(QDialog):
         Initialize the user interface.
         """
         self.setWindowTitle(self.title)
-        self.setGeometry(400, 400, 300, 260)
+        self.setGeometry(400, 400, 376, 532)
         self.grid_layout()
         # Set the button label text
         self.first_button.setText("One")
